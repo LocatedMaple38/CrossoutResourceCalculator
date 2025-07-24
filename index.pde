@@ -6,10 +6,20 @@ float[] filterX = new float[filter], filterY = new float[filter], filterWidth = 
 float[] sortX = new float[sort], sortY = new float[sort], sortWidth = new float[sort], sortHeight = new float[sort];
 
   void setup(){
-    
+    size(500, 500);
+    for(int i = 0; i < item){
+      itemX[i] = 0;
+      itemY[i] = i*10;
+      itemWidth = 40;
+      itemHeight = 10;
+      item == i ? continue : i++;
+    }
   }
 
-  void draw(){}
+  void draw(){
+    for(int i = 0; i < item){
+      rec(itemX, itemY, itemWidth, itemHetght);
+  }
 
   void keypressed(){}
 
