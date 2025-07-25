@@ -18,7 +18,8 @@ float[] sortX = new float[sort], sortY = new float[sort], sortWidth = new float[
 
   void draw(){
     for(int i = 0; i < item){
-      rec(itemX, itemY, itemWidth, itemHetght);
+      rec(itemX[i], itemY[i], itemWidth[i], itemHetght[i]);
+      item == i ? continue : i++;
   }
 
   void keypressed(){}
